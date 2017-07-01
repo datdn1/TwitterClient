@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28B43A561F08170D0069C0ED /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B43A4D1F08170D0069C0ED /* FaveButton.swift */; };
+		28B43A571F08170D0069C0ED /* FaveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B43A4E1F08170D0069C0ED /* FaveIcon.swift */; };
+		28B43A581F08170D0069C0ED /* Constraints+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B43A501F08170D0069C0ED /* Constraints+.swift */; };
+		28B43A591F08170D0069C0ED /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B43A511F08170D0069C0ED /* Easing.swift */; };
+		28B43A5A1F08170D0069C0ED /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B43A521F08170D0069C0ED /* Geometry.swift */; };
+		28B43A5B1F08170D0069C0ED /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B43A531F08170D0069C0ED /* Init.swift */; };
+		28B43A5C1F08170D0069C0ED /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B43A541F08170D0069C0ED /* Ring.swift */; };
+		28B43A5D1F08170D0069C0ED /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B43A551F08170D0069C0ED /* Spark.swift */; };
 		2CDEFAA3F7753ED2BA817342 /* Pods_TwitterClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC407DBE49EA23C20FDC005 /* Pods_TwitterClient.framework */; };
 		5BC7DBAB1F07D64000AEE6D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7DBAA1F07D64000AEE6D6 /* DetailViewController.swift */; };
 		5BCCD0CA1F056BB500F1F91A /* TimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCCD0C91F056BB500F1F91A /* TimeLineCell.swift */; };
@@ -45,6 +53,14 @@
 /* Begin PBXFileReference section */
 		06677C162838003F53B8AE4A /* Pods-TwitterClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterClientTests/Pods-TwitterClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		14D99A0BB61A906E1C69A87E /* Pods_TwitterClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B43A4D1F08170D0069C0ED /* FaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveButton.swift; sourceTree = "<group>"; };
+		28B43A4E1F08170D0069C0ED /* FaveIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveIcon.swift; sourceTree = "<group>"; };
+		28B43A501F08170D0069C0ED /* Constraints+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraints+.swift"; sourceTree = "<group>"; };
+		28B43A511F08170D0069C0ED /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		28B43A521F08170D0069C0ED /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		28B43A531F08170D0069C0ED /* Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
+		28B43A541F08170D0069C0ED /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		28B43A551F08170D0069C0ED /* Spark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
 		3AC407DBE49EA23C20FDC005 /* Pods_TwitterClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF568B7EA0DD560B344E2C8 /* Pods-TwitterClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterClient/Pods-TwitterClient.debug.xcconfig"; sourceTree = "<group>"; };
 		5BC7DBAA1F07D64000AEE6D6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -101,9 +117,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B43A4B1F0816F30069C0ED /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				28B43A4C1F0816FF0069C0ED /* CaveButton */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		28B43A4C1F0816FF0069C0ED /* CaveButton */ = {
+			isa = PBXGroup;
+			children = (
+				28B43A4D1F08170D0069C0ED /* FaveButton.swift */,
+				28B43A4E1F08170D0069C0ED /* FaveIcon.swift */,
+				28B43A4F1F08170D0069C0ED /* Helpers */,
+				28B43A541F08170D0069C0ED /* Ring.swift */,
+				28B43A551F08170D0069C0ED /* Spark.swift */,
+			);
+			name = CaveButton;
+			sourceTree = "<group>";
+		};
+		28B43A4F1F08170D0069C0ED /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				28B43A501F08170D0069C0ED /* Constraints+.swift */,
+				28B43A511F08170D0069C0ED /* Easing.swift */,
+				28B43A521F08170D0069C0ED /* Geometry.swift */,
+				28B43A531F08170D0069C0ED /* Init.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		5BF6BDFE1F039F64007C6ECD = {
 			isa = PBXGroup;
 			children = (
+				28B43A4B1F0816F30069C0ED /* Libraries */,
 				5BF6BE091F039F65007C6ECD /* TwitterClient */,
 				5BF6BE1E1F039F65007C6ECD /* TwitterClientTests */,
 				5BF6BE291F039F66007C6ECD /* TwitterClientUITests */,
@@ -369,7 +417,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		23EC961B946F4DB2C15E60AA /* [CP] Copy Pods Resources */ = {
@@ -399,7 +447,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		57E898E17140101356768416 /* [CP] Copy Pods Resources */ = {
@@ -459,7 +507,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CB277A915EBCBCE006B5108F /* [CP] Embed Pods Frameworks */ = {
@@ -499,11 +547,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B43A581F08170D0069C0ED /* Constraints+.swift in Sources */,
 				5BF6BE3F1F03A1F0007C6ECD /* User.swift in Sources */,
+				28B43A591F08170D0069C0ED /* Easing.swift in Sources */,
+				28B43A561F08170D0069C0ED /* FaveButton.swift in Sources */,
+				28B43A5A1F08170D0069C0ED /* Geometry.swift in Sources */,
 				5BF6BE3D1F03A107007C6ECD /* TwitterAPI.swift in Sources */,
 				5BF6BE411F03A20E007C6ECD /* TimeLine.swift in Sources */,
+				28B43A5D1F08170D0069C0ED /* Spark.swift in Sources */,
+				28B43A5C1F08170D0069C0ED /* Ring.swift in Sources */,
 				5BF6BE431F03A86E007C6ECD /* LoginViewController.swift in Sources */,
 				5BF6BE0B1F039F65007C6ECD /* AppDelegate.swift in Sources */,
+				28B43A5B1F08170D0069C0ED /* Init.swift in Sources */,
+				28B43A571F08170D0069C0ED /* FaveIcon.swift in Sources */,
 				5BF6BE451F03AE92007C6ECD /* TimeLineViewController.swift in Sources */,
 				5BCCD0CA1F056BB500F1F91A /* TimeLineCell.swift in Sources */,
 				5BC7DBAB1F07D64000AEE6D6 /* DetailViewController.swift in Sources */,

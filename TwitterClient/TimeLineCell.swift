@@ -8,7 +8,6 @@
 
 import UIKit
 import AFNetworking
-import FaveButton
 
 func color(_ rgbColor: Int) -> UIColor{
   return UIColor(
@@ -55,7 +54,9 @@ class TimeLineCell: UITableViewCell, FaveButtonDelegate {
       
       isFavorited = timeLine.favorited
       isRetweet = timeLine.retweeted
-      likeButton.isSelected = timeLine.favorited
+//      likeButton.isSelected = timeLine.favorited
+
+        likeButton.setSelected(selected: timeLine.favorited, animated: false)
       retweetedButton.isSelected = timeLine.retweeted
      // likeButton.setImage(UIinamed: "liked", for: UIControlState.normal)
 //      if isFavorited {
@@ -109,6 +110,8 @@ class TimeLineCell: UITableViewCell, FaveButtonDelegate {
     }
   
   }
+
+    func instantCallback(_ faveButton: FaveButton, didSelected selected: Bool) { }
   
 //  func faveButtonDotColors(_ faveButton: FaveButton) -> [DotColors]?{
 //    return colors

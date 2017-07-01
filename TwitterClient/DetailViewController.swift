@@ -8,7 +8,6 @@
 
 import UIKit
 import AFNetworking
-import FaveButton
 
 class DetailViewController: UIViewController {
   
